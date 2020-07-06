@@ -1,0 +1,1 @@
+%cd%\Scripts\python.exe %cd%\example.py
