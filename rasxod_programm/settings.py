@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-SERVER_HOST         = "87.237.237.251"
+SERVER_HOST         = "87.237.237.252"
 SERVER_PORT         = 2468
 TIME_SLEEP          = 1     	# zaderjda v sekundax
 ##########################################################
