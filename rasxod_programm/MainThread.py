@@ -23,7 +23,10 @@ class DisplayThread(QThread):
         self.coefficent_2      = CONST.COEFFICENT_2
         self.time_sleep        = CONST.TIME_SLEEP
         self.path              = CONST.PATH
-    
+        self.db_file_name      = CONST.DB_FILE_NAME
+        if self.path is None:
+            self.path = os.path.abspath(self.db_file_name)
+        print(self.path)
     def run(self):
 
 
