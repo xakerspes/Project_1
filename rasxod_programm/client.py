@@ -272,7 +272,8 @@ class ModbusClient:
             try:
                 self.__sock.settimeout(self.__timeout)
                 self.__sock.connect(sa)
-            except socket.error:
+            except Exception as e:
+                raise RuntimeError(e) 
                 self.__sock.close()
                 self.__sock = None
                 continue
@@ -666,4 +667,4 @@ class ModbusClient:
         :type msg: str
         """
         if self.__debug:
-            print(msg)
+            raise RuntimeError("dsfdsfds")

@@ -1,0 +1,1 @@
+start "ASDA_Spirt_Program" "%cd%\Scripts\pythonw.exe" "%cd%\main.py"
